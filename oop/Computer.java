@@ -2,11 +2,14 @@ package oop;
 
 public class Computer {
     private Ram ram;
+    private Ssd ssd;
 
-    public Computer(Ram ram) {
+    public Computer(Ram ram, Ssd ssd) {
         this.ram = ram;
+        this.ssd = ssd;
     }
+
     public void printStatement(){
-        System.out.println("Computer ram: "+ram.getValue());
+        System.out.println("Computer ram: "+ram.getValue()+", ssd: " +ssd.getValue());
     }
 }
